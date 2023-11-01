@@ -1,0 +1,6 @@
+# Ignore .pycache folders
+__pycache__
+
+# Ignore the model folder and virtualenv created outside
+model/
+../appenv/
