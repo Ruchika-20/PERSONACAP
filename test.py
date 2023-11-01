@@ -67,11 +67,11 @@ def find_caption(filename):
     feature = extract_features(filename)
     print(feature)
 
-    model = load_model(r'/home/deramworld/Documents/GITHUB_MINI_PROJECT/PERSONACAP/model/best_model.h5')
+    model = load_model(r'Add path of the model')
 
     print(model.summary())
 
-    tokenizer = load(open(r'/home/deramworld/Documents/GITHUB_MINI_PROJECT/PERSONACAP/model/tokenizer.pkl', 'rb'))
+    tokenizer = load(open(r'Add path of the tokenizer', 'rb'))
     max_length = 35
 
     y_pred = predict_caption(model, feature, tokenizer, max_length)
