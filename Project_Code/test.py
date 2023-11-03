@@ -67,11 +67,11 @@ def find_caption(filename):
     feature = extract_features(filename)
     print(feature)
 
-    model = load_model(r'Add path of model')
+    model = load_model(r'Project_Code/model/best_model.h5')
 
     print(model.summary())
 
-    tokenizer = load(open(r'Add path of tokenizer', 'rb'))
+    tokenizer = load(open(r'Project_Code/model/tokenizer.pkl', 'rb'))
     max_length = 35
 
     y_pred = predict_caption(model, feature, tokenizer, max_length)
